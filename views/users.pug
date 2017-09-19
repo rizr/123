@@ -1,0 +1,14 @@
+table
+    tr
+        th First name
+        th Surname
+        th Email
+    each user in users
+        tr
+            td(style="text-align:center")= user.firstName
+            td(style="text-align:center")= user.surname
+            td(style="text-align:center")= user.email
+div
+    -var x = 0;
+    while ((count / limit) > x)
+        a(style="margin:5px" href='' + x++) #{x}
